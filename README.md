@@ -7,7 +7,8 @@ Hysteria 一键脚本，支持IPv4、IPv6 VPS
 ## 使用方法
 
 ```shell
-wget -N https://raw.githubusercontents.com/Misaka-blog/Hysteria-script/master/hysteria.sh && bash hysteria.sh
+# wget -N https://raw.githubusercontents.com/Misaka-blog/Hysteria-script/master/hysteria.sh && bash hysteria.sh
+wget -N https://raw.githubusercontents.com/tpe28/Hysteria-script/master/hysteria.sh && bash hysteria.sh
 ```
 
 ### 快捷指令
@@ -30,7 +31,8 @@ wget -N https://raw.githubusercontents.com/Misaka-blog/Hysteria-script/master/hy
 
 ## 客户端连接教程
 
-新版V2rayN: https://owo.misaka.rest/Hysteria-V2rayN/
+新版V2rayN: ~~https://owo.misaka.rest/Hysteria-V2rayN/~~ *已失效*  
+*请通过 https://web.archive.org/web/20220531192819/https://owo.misaka.rest/Hysteria-V2rayN/ 浏览* 
 
 ### 官方命令行连接教程
 
@@ -74,9 +76,10 @@ Hysteria：https://github.com/HyNetwork/hysteria
 
 YouTube 不良林：https://www.youtube.com/watch?v=pMe_oErfLWQ
 
-## 交流
+## ~~交流群~~ 墓碑
 
-[Telegram 群组](https://t.me/misakanetcn)
+~~[Telegram] (https://t.me/misakanetcn)~~  
+[Telegram Channel](https://t.me/misakano)
 
 ## Stars 增长记录
 

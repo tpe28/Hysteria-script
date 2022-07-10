@@ -45,6 +45,11 @@ if [[ -n $(echo $IP | grep ":") ]]; then
     IP="[$IP]"
 fi
 
+## 统计脚本运行次数
+COUNT=$(curl -sm8 "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fraw.githubusercontents.com%2Ftpe28%2FHysteria-script%2Fmaster%2Fhysteria.sh&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" 2>&1) &&
+TODAY=$(expr "$COUNT" : '.*\s\([0-9]\{1,\}\)\s/.*')
+TOTAL=$(expr "$COUNT" : '.*/\s\([0-9]\{1,\}\)\s.*')
+
 check_tun(){
     TUN=$(cat /dev/net/tun 2>&1 | tr '[:upper:]' '[:lower:]')
     if [[ ! $TUN =~ 'in bad state' ]] && [[ ! $TUN =~ '处于错误状态' ]] && [[ ! $TUN =~ 'Die Dateizugriffsnummer ist in schlechter Verfassung' ]]; then
@@ -362,6 +367,7 @@ menu() {
     echo -e "# ${GREEN}Bitbucket${PLAIN}: https://bitbucket.org/misakano7545             #"
     echo -e "# ${GREEN}GitLab${PLAIN}: https://gitlab.com/misaka-blog                    #"
     echo "#############################################################"
+    echo -e "今日运行次数：$TODAY   总共运行次数：$TOTAL"
     echo ""
     echo -e "  ${GREEN}1.${PLAIN}  安装Hysieria "
     echo -e "  ${GREEN}2.  ${RED}卸载Hysieria ${PLAIN}"
